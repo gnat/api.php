@@ -17,8 +17,8 @@ if($method == 'GET') {
 	$output = ['time' => time()];
 }
 if($method == 'POST') {
-	$name = $input['name'] ??= 'guest';
-	$output = ['message' => "Hello, ".$name."!"];
+	$input['name'] ??= 'guest';
+	$output = ['message' => "Hello, ".$input['name']."!"];
 }
 if($method == 'PUT') {
 	$output['error'] = "Not yet implemented";
