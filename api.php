@@ -5,7 +5,7 @@ Easily build an Internet API in a single file using PHP (https://github.com/gnat
 Use with Curl
 	curl -X POST 127.0.0.1/api.php -d '{"name":"Edward"}'
 Use with Web Browser
-	fetch('/api.php', {method: 'GET'}).then(async result => { console.log(`${(await result.json())}`) } )
+	fetch('/api.php', {method: 'GET'}).then(async result => { console.log(`${(await result.text())}`) } )
 */
 
 $input = [];
