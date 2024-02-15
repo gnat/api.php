@@ -10,7 +10,7 @@ Use with Web Browser
 
 $input = [];
 $output = [];
-if (!empty(file_get_contents('php://input'))) { $input = json_decode(file_get_contents('php://input'), true); }
+if(!empty(file_get_contents('php://input'))) { $input = json_decode(file_get_contents('php://input'), true); }
 $method = $_SERVER['REQUEST_METHOD'];
 
 if($method == 'GET') {
